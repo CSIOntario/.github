@@ -1,0 +1,45 @@
+name: Epic (project)
+description: A whole project or initiative — one per repo. For team leads.
+title: "[Epic]: "
+type: Epic
+projects: ["CSIOntario/1"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this to add a project to the priority list. After creating it, set **Priority**, **Project size** and **Start / Target date** in the sidebar.
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What is this project, in a sentence or two?
+    validations:
+      required: true
+  - type: textarea
+    id: goals
+    attributes:
+      label: Goals
+      description: What does success look like? What will be different when it's done?
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: What's included, and what's explicitly not included?
+  - type: input
+    id: owner
+    attributes:
+      label: Project lead
+      description: Who is responsible for this project?
+      placeholder: "@username"
+  - type: input
+    id: stakeholders
+    attributes:
+      label: Stakeholders
+      description: Teams or people who need to be kept informed
+  - type: textarea
+    id: links
+    attributes:
+      label: Related links
+      description: Docs, designs, the old priority tracker entry, etc.
